@@ -15,5 +15,8 @@
 #import "HDTBannerAd.h"
 #import "HDTIconAd.h"
 #import "HDTInterstitialAd.h"
+#import "HDTInterstitialWebAd.h"
 #import "HDTOutputDataAd.h"
 #import "HDTInterstitialActivityAd.h"
+#import "YJFEmbeddedWebAd.h"
+#import "YJFNoEntranceWebAd.h"

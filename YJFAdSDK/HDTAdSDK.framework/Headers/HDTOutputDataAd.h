@@ -108,18 +108,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<HDTOutputDataAdDelegate> delegate;
 
-/// 构造方法
-/// @param placementId - 广告位 ID
-/// @return HDTRewardVideoAd 实例
+/**
+ * 构造方法
+ * @param placementId - 广告位 ID
+ * @return HDTRewardVideoAd 实例
+ */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
 
 
-/// 加载广告并获取广告数据方法
-/// @param viewController 广告展示的容器
+/**
+ * 加载广告并获取广告数据方法
+ * @param viewController 广告展示的容器
+ */
 - (void)loadAndGetAdDataWithRootViewController:(UIViewController *)viewController;
 
-/// 展示激励视频广告
-/// 注：adType广告类型为2或3，即视频类型时，需调用该方法展示激励视频
+/**
+ * 展示激励视频广告
+ * 注：adType广告类型为2或3，即视频类型时，需调用该方法展示激励视频
+ */
 - (void)showRewardVideoAd;
 
 @end

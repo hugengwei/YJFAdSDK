@@ -35,15 +35,24 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) id<HDTInterstitialActivityAdDelegate> delegate;
 
-/// 构造方法
-/// @param placementId - 广告位 ID
-/// @return HDTRewardVideoAd 实例
+/**
+ * 构造方法
+ * @param placementId - 广告位 ID
+ * @return HDTRewardVideoAd 实例
+ */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
 
 
-/// 加载并展示广告方法
-/// @param viewController 广告展示的容器
-- (void)loadAdAndShowWithRootViewController:(UIViewController *)viewController;
+/**
+ * 加载并展示广告方法
+ */
+- (void)preLoadActivity;
+
+/**
+ * 展示插屏活动
+ * @param viewController 广告展示的容器
+ */
+- (void)showPreActivityWithViewController:(UIViewController *)viewController;
 
 @end
 

@@ -41,12 +41,24 @@ NS_ASSUME_NONNULL_BEGIN
 @interface HDTIconAd : NSObject
 @property (nonatomic, weak) id<HDTIconAdDelegate> delegate;
 
-/// 构造方法
-/// @param placementId  广告位ID
-/// @param controller  展示icon的控制器
+/**
+ * 构造方法
+ * @param placementId  广告位ID
+ * @param controller  展示icon的控制器
+ */
 - (instancetype)initWithPlacementId:(NSString *)placementId showController:(UIViewController *)controller;
 
-/// 拉取并展示广告
+/**
+ * 构造方法
+ * @param placementId  广告位ID
+ * @param controller  展示icon的控制器
+ * @param userId 用户ID
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId showController:(UIViewController *)controller userId:(NSString *)userId;
+
+/**
+ * 拉取并展示广告
+ */
 - (void)loadAdAndShow;
 
 @end

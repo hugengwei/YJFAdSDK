@@ -55,17 +55,29 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, assign) CGFloat fetchDelay;
 
-/// 开屏广告的背景图片；可以设置背景图片作为开屏加载时的默认背景
+/**
+ * 开屏广告的背景图片；可以设置背景图片作为开屏加载时的默认背景
+ */
 @property (nonatomic, strong) UIImage *backgroundImage;
 
-/// 构造方法
-/// @param placementId  广告位ID
+/**
+ * 构造方法
+ * @param placementId  广告位ID
+ */
 - (instancetype)initWithPlacementId:(NSString *)placementId;
 
+/**
+ * 构造方法
+ * @param placementId  广告位ID
+ * @param userId  用户ID
+ */
+- (instancetype)initWithPlacementId:(NSString *)placementId userId:(NSString *)userId;
 
-/// 拉取数据并展示
-/// @param window 开屏广告所在window
-/// @param bottomView 底部logo展示容器
+/**
+ * 拉取数据并展示
+ * @param window 开屏广告所在window
+ * @param bottomView 底部logo展示容器
+ */
 - (void)loadAdAndShowWithWindow:(UIWindow *)window withBottomView:(nullable UIView *)bottomView;
 
 @end
